@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style1.css">
-    <title>Option</title>
+    <title>Зеркало</title>
 </head>
 <body>
     <div class="cont_0"></div>
     <div class="container1">
-        <button class="btn1" onclick="window.location.href='index.html'">Зеркало</button>
-        <button class="btn2" onclick="window.location.href='index2.html'">Холст</button>
-        <button class="btn3" onclick="window.location.href='index3.html'">Вышивка</button>
+        <input type="text" class="inp1" id="input1" placeholder="Первая сторона в метрах">
+        <input type="text" class="inp2" id="input2" placeholder="Вторая сторона в метрах">
+        <input type="text" class="inp3" id="input3" placeholder="Стоимость рамки">
+        <button class="btn1" onclick="return oneFun()">Найти</button>
     </div>
 </body>
+<script>
+    function oneFun() {
+        let i1= document.getElementById('input1');
+        let i11 = i1.value;
+        let i2= document.getElementById('input2');
+        let i22 = i2.value;
+        let i3= document.getElementById('input3');
+        let i33 = i3.value;
+
+        if(i11 === "" || i22 === "" || i33 === ""){
+            alert("Поля не заполнены")
+            
+        }else{
+            
+            let ramka = ((i11 * 2) + (i22 *2)) * i33;
+            let zarkolo = (i11 * i22) * 2300;
+            let krep = 800;
+            let rab = (ramka + zarkolo + krep) * 0.2;
+            let itog = (ramka + zarkolo + krep + rab);
+            alert ("Стоимость рамки: " + ramka + "\n" + "Стоимость зеркала: " + zarkolo + "\n" + "Крепеж: " + krep + "\n" + "Работа: " + rab + "\n" + "Итоговая стоимость: " + itog);
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            document.getElementById('input3').value = '';
+        }
+    }
+</script>
 </html>

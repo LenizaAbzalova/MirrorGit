@@ -17,48 +17,8 @@
         border-radius: 30px;
     }
 
-    .inp1{
-        margin-left: 15px;
-        width: 250px;
-        height: 35px;
-        border-radius: 20px;
-        border-style: dashed;
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-top: 65px;
-        padding-left: 10px;
-        color: rgb(116, 116, 116);
-    }
-
-    .inp2{
-        margin-left: 15px;
-        width: 250px;
-        height: 35px;
-        border-radius: 20px;
-        border-style: dashed;
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-top: 40px;
-        padding-left: 10px;
-        color: rgb(116, 116, 116);
-    }
-
-    .inp3{
-        margin-left: 15px;
-        width: 250px;
-        height: 35px;
-        border-radius: 20px;
-        border-style: dashed;
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-top: 40px;
-        padding-left: 10px;
-        color: rgb(116, 116, 116);
-        background-color: white;
-    }
-
     .btn1{
-        margin-left: 20px;
+        margin-left: 25px;
         width: 250px;
         height: 35px;
         border-radius: 20px;
@@ -66,8 +26,41 @@
         border-color: rgb(116, 116, 116);
         font-size: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-top: 40px;
+        margin-top: 65px;
+        padding-left: 10px;
         color: rgb(116, 116, 116);
         background-color: white;
     }
+
+    .btn2{
+        margin-left: 25px;
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(116, 116, 116);
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 80px;
+        padding-left: 10px;
+        color: rgb(116, 116, 116);
+        background-color: white;
+    }
+
+    .btn3{
+        margin-left: 25px;
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(116, 116, 116);
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 80px;
+        padding-left: 10px;
+        color: rgb(116, 116, 116);
+        background-color: white;
+    }
+
+    
 }
