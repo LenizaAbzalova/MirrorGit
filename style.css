@@ -2,7 +2,7 @@
 
     body{
         background-image: linear-gradient(#ffc6bd, #e39de4);
-        height: 600px;
+        height: auto;
     }
 
     .container1{
