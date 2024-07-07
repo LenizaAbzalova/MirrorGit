@@ -1,0 +1,84 @@
+@media(max-width:480px){
+
+    body{
+        background-image: linear-gradient(#ffc6bd, #e39de4);
+        height: 600px;
+    }
+
+    .container1{
+        width: 263px;
+        height: 300px;
+        margin: auto;
+    }
+    
+    .container2{
+        width: 263px;
+        height: 500px;
+        margin: auto;
+        background-color: aqua;
+        display: none;
+    }
+
+    .inp1{
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: none;
+        border-style: unset;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30px;
+        padding-left: 10px;
+        color: rgb(116, 116, 116);
+    }
+
+    .inp2{
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30px;
+        padding-left: 10px;
+        color: rgb(116, 116, 116);
+    }
+
+    .inp3{
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30px;
+        padding-left: 10px;
+        color: rgb(116, 116, 116);
+        background-color: white;
+    }
+
+    .btn1{
+        width: 263px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30px;
+        color: rgb(116, 116, 116);
+        background-color: white;
+    }
+
+    .btn2{
+        width: 263px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30px;
+        color: rgb(116, 116, 116);
+    }
+
+
+}
