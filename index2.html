@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Вышивка</title>
+</head>
+<body>
+    <div class="cont_0"></div>
+    <div class="container1">
+        <input type="text" class="inp1" id="input1" placeholder="Первая сторона в сантиметрах">
+        <input type="text" class="inp2" id="input2" placeholder="Вторая сторона в сантиметрах">
+        <input type="text" class="inp4" id="input4" placeholder="Размер рамки в сантиметрах">
+        <input type="text" class="inp3" id="input3" placeholder="Стоимость рамки">
+        <button class="btn1" onclick="return oneFun()">Найти</button>
+    </div>
+    <div class="container2">
+        <button class="btn2" onclick="window.location.href='index.html'">Назад</button>
+    </div>
+    
+</body>
+<script>
+    function oneFun() {
+        let i1 = document.getElementById ('input1')
+        let i11 = i1.value;
+        let i2= document.getElementById('input2');
+        let i22 = i2.value;
+        let i3= document.getElementById('input3');
+        let i33 = i3.value;
+        let i4= document.getElementById('input4');
+        let i44 = i4.value;
+
+        if(i11 === "" || i22 === ""){
+            alert("Поля не заполнены")
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            document.getElementById('input3').value = '';
+            document.getElementById('input4').value = '';
+            
+        }else if(i33 === "" || i44 === ""){
+            let cteclo = ((i11 * i22) / 10000) * 1400;
+            let DVP = ((i11 * i22) / 10000) * 600;
+            let karton = ((i11 * i22) / 10000) * 400;
+            let podvec = 50;
+            let vstavka = 200;
+            let itog = (cteclo + DVP + karton + podvec + vstavka);
+            alert ("Стоимость стекла: " + cteclo + "\n" + "ДВП: " + DVP + "\n" + "Картон: " + karton + "\n"  + "Подвес: " + podvec + "\n" + "Вставка: " + vstavka + "\n" + "Итоговая стоимость: " + itog);
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            document.getElementById('input3').value = '';
+            document.getElementById('input4').value = '';
+        }
+        else{
+            let r = i44 * 2;
+            let ramkaOne = +i11 + +r;
+            let ramkaTwo = +i22 + +r;
+            let ramka = ((ramkaOne + ramkaOne + ramkaTwo + ramkaTwo) / 100) * i33;
+            let cteclo = ((i11 * i22) / 10000) * 1400;
+            let DVP = ((i11 * i22) / 10000) * 600;
+            let karton = ((i11 * i22) / 10000) * 400;
+            let podvec = 50;
+            let vstavka = 200;
+            let itog = (ramka + cteclo + DVP + karton + podvec + vstavka);
+            alert ("Стоимость рамки: " + ramka + "\n" +"Стоимость стекла: " + cteclo + "\n" + "ДВП: " + DVP + "\n" + "Картон: " + karton + "\n"  + "Подвес: " + podvec + "\n" + "Вставка: " + vstavka + "\n" + "Итоговая стоимость: " + itog);
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            document.getElementById('input3').value = '';
+            document.getElementById('input4').value = '';
+        }
+    }
+</script>
+</html>

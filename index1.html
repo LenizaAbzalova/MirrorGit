@@ -9,10 +9,13 @@
 <body>
     <div class="cont_0"></div>
     <div class="container1">
-        <input type="text" class="inp1" id="input1" placeholder="Первая сторона в метрах">
-        <input type="text" class="inp2" id="input2" placeholder="Вторая сторона в метрах">
-        <input type="text" class="inp3" id="input3" placeholder="Стоимость рамки">
+        <input type="text" class="inp1" id="input1" placeholder="Первая сторона в сантиметрах">
+        <input type="text" class="inp2" id="input2" placeholder="Вторая сторона в сантиметрах">
+        <input type="text" class="inp3" id="input3" placeholder="Стоимость рамки (не обязательно)">
         <button class="btn1" onclick="return oneFun()">Найти</button>
+    </div>
+    <div class="container2">
+        <button class="btn2" onclick="window.location.href='index.html'">Назад</button>
     </div>
 </body>
 <script>
@@ -24,13 +27,26 @@
         let i3= document.getElementById('input3');
         let i33 = i3.value;
 
-        if(i11 === "" || i22 === "" || i33 === ""){
+        if(i11 === "" || i22 === ""){
             alert("Поля не заполнены")
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            document.getElementById('input3').value = '';
+            document.getElementById('input4').value = '';
             
-        }else{
-            
-            let ramka = ((i11 * 2) + (i22 *2)) * i33;
-            let zarkolo = (i11 * i22) * 2300;
+        }else if(i33 === ""){
+            let zarkolo = ((i11 * i22) / 10000) * 2300;
+            let krep = 800;
+            let rab = (zarkolo + krep) * 0.2;
+            let itog = (zarkolo + krep + rab);
+            alert ("Стоимость зеркала: " + zarkolo + "\n" + "Крепеж: " + krep + "\n" + "Работа: " + rab + "\n" + "Итоговая стоимость: " + itog);
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            document.getElementById('input3').value = '';
+        }
+        else{
+            let ramka = (((i11 * 2) + (i22 *2)) / 100) * i33;
+            let zarkolo = ((i11 * i22) / 10000) * 2300;
             let krep = 800;
             let rab = (ramka + zarkolo + krep) * 0.2;
             let itog = (ramka + zarkolo + krep + rab);
